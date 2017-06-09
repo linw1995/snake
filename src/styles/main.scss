@@ -1,0 +1,87 @@
+
+$primary: #e67e22;
+$accent: #ff5722;
+
+@import 'screen.css';
+
+@import 'github-corner.scss';
+
+@import 'buttons.css';
+
+
+::-moz-selection {
+  background: #fff !important;
+  color: #444 !important;
+}
+
+::selection {
+  background: rgba(255, 255, 255, 0) !important;
+  color: #444 !important;
+}
+
+#universe {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.controls {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+
+    button {
+        margin: 0.5rem 1rem;
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.github-link {
+    position: fixed;
+    top: 24px;
+    left: 125px;
+    font-size: 1rem;
+    a {
+        text-decoration: none;
+    }
+    .octicon {
+        height: 20px;
+        vertical-align: sub;
+    }
+}
+
+#fps-info {
+    min-width: 10rem;
+    position: fixed;
+    top: 26px;
+    left: 0;
+    right: 80px;
+    text-align: right;
+}
+
+.text-content {
+    position: absolute;
+    width: 80%;
+    height: 60%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: scroll;
+    overflow-x: hidden;
+    margin: auto;
+}
+
+small {
+    font-size: 0.9rem;
+}

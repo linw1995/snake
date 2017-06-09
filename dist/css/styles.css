@@ -1,0 +1,188 @@
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #fff;
+  padding: 0;
+}
+
+body,html {
+  margin: 0;
+  width: 100%;
+}
+
+body {
+  height: 100%;
+  padding: 1em;
+  font-family: Alegreya,Palatino,Georgia,serif;
+  font-size: 100%;
+  color: #444;
+}
+
+a,a:visited {
+  color: #444;
+  transition: color .3s ease;
+}
+
+a:hover {
+  color: #000;
+}
+
+.content {
+  padding: .809em;
+  max-width: 30em;
+  margin: auto;
+}
+
+@media (min-width:33.236em) {
+  .content {
+    padding: 1.618em;
+    margin: 0 auto;
+    max-width: 45rem;
+    font-size: 125%;
+  }
+}
+
+@media (min-width:33.236em) and screen and (min-width:30em) and (max-width:63.236em) {
+  .content {
+    width: 30em;
+  }
+}
+
+.button {
+  background-color: #eee;
+  display: inline-block;
+  cursor: pointer;
+  color: #333;
+  font-family: Franklin Gothic Medium,Arial Narrow,Arial,sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  padding: 6px 24px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: #fff;
+}
+
+.button:active {
+  position: relative;
+  top: 1px;
+}
+
+.github-corner svg {
+  fill: rgba(222,122,39,.5);
+  color: #fff;
+  position: fixed;
+  top: 0;
+  border: 0;
+  right: 0;
+}
+
+.github-corner svg:hover {
+  fill: rgba(255,118,5,.5);
+}
+
+.github-corner:hover .octo-arm {
+  animation: octocat-wave .56s ease-in-out;
+}
+
+@keyframes octocat-wave {
+  0%, to {
+    transform: rotate(0);
+  }
+
+  20%, 60% {
+    transform: rotate(-25deg);
+  }
+
+  40%, 80% {
+    transform: rotate(10deg);
+  }
+}
+
+@media (max-width:500px) {
+  .github-corner:hover .octo-arm {
+    animation: none;
+  }
+
+  .github-corner .octo-arm {
+    animation: octocat-wave .56s ease-in-out;
+  }
+}
+
+.github-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+}
+
+::-moz-selection {
+  background: #fff!important;
+  color: #444!important;
+}
+
+::selection {
+  background: hsla(0,0%,100%,0)!important;
+  color: #444!important;
+}
+
+#universe {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.controls {
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+}
+
+.controls button {
+  margin: .5rem 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.github-link {
+  position: fixed;
+  top: 24px;
+  left: 125px;
+  font-size: 1rem;
+}
+
+.github-link a {
+  text-decoration: none;
+}
+
+.github-link .octicon {
+  height: 20px;
+  vertical-align: sub;
+}
+
+#fps-info {
+  min-width: 10rem;
+  position: fixed;
+  top: 26px;
+  left: 0;
+  right: 80px;
+  text-align: right;
+}
+
+small {
+  font-size: .9rem;
+}
