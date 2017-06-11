@@ -114,7 +114,7 @@ a:hover {
   }
 }
 
-.github-button {
+.github-button, iframe {
   position: fixed;
   top: 20px;
   left: 20px;
